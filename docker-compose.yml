@@ -11,7 +11,7 @@ services:
       - 5432:5432
   web:
     build: ./
-    command: uvicorn main:app --host=0.0.0.0 --reload
+    command: python main.py
     volumes:
       - .:/usr/src/cnw
     ports:
